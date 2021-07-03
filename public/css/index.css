@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #5589C3;
+    --color-secondary: #EAA360;
+    --color-black: #222;
+    --font-heading: 'Oswald', sans-serif;
+}
+
+html{
+    font-size: 45%;
+}
+
+
+main{
+    max-width: 996px;
+    height: calc(100vh - 5.4rem);
+    margin: 2.7rem auto;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.7rem;
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    text-transform: uppercase;
+    text-align: center;
+    /* text-shadow: .2rem .2rem .2rem rgba(0,0,0,.3); */
+}
+p{
+    font-family: var(--font-heading);
+    font-size: 1.9rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.image{
+    margin: 1.4rem 0;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.image > img{
+    width: 63rem;
+    height: 55rem;
+    
+}
+
+@media only screen and (min-width: 996px) {
+
+    html{
+        font-size: 62.5%;
+    }
+    .image > img{
+        width: 96rem;
+        height: 69rem;
+    }
+}
